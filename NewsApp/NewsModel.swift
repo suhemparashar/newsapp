@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct NewsModel: Codable {
+    let articles: [Articles]?
+}
+
+struct Articles: Codable {
+    let title: String?
+    let urlToImage: String?
+}
